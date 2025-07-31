@@ -1,0 +1,1 @@
+A little project to help me learn python, temporal + llm APIs
