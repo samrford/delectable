@@ -1,7 +1,6 @@
 # Delectable
 A little project to help me learn Python + Temporal + LLM APIs
 
-
 It's a service takes a list of some of your favourite dishes, finds some similar dishes you might like based on them, then finds restaurants in the specified location that serve them. 
 
 The request info is used to create multiple LLM prompts that retrieve the data, which is then processed and returned.
@@ -10,7 +9,9 @@ It uses Temporal to orchestrate a workflow.
 
 ## Setup
 
-1.  **Start Temporal:**
+1.  **Install and Start Temporal:**
+
+    Download at https://temporal.io/setup/install-temporal-cli
 
     Open a terminal and run the Temporal development server:
 
