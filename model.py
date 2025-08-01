@@ -17,4 +17,5 @@ class DishWithInfo(BaseModel):
     where_to_find: RestaurantInfo
     
 class SearchResponse(BaseModel):
+    status: str
     dishes: list[DishWithInfo]

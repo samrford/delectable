@@ -40,4 +40,4 @@ class RestaurantSuggestion:
             for dish, restaurants in zip(find_dishes_output, restaurant_outputs)
         ]
 
-        return SearchResponse(dishes=restaurants_found)
+        return SearchResponse(status="success", dishes=restaurants_found)
