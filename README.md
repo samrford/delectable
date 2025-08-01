@@ -1,6 +1,8 @@
 # Delectable
+A little project to help me learn Python + Temporal + LLM APIs
 
-A service takes a list of some of your favourite dishes, finds some similar dishes you might like based on them, then finds restaurants in the specified location that serve them. 
+
+It's a service takes a list of some of your favourite dishes, finds some similar dishes you might like based on them, then finds restaurants in the specified location that serve them. 
 
 The request info is used to create multiple LLM prompts that retrieve the data, which is then processed and returned.
 
@@ -21,6 +23,11 @@ It uses Temporal to orchestrate a workflow.
 2.  **Start the Application Server:**
 
     In a new terminal, start the app:
+
+    ```bash
+    python3 -m venv .venv
+    source /venv/bin/activate
+    ```
 
     ```bash
     python main.py
@@ -72,5 +79,5 @@ export GEMINI_API_KEY="your-api-key"
     curl http://localhost:8787/result/{id-from-result}
     ```
 
-    The response will contain the list of dishes and the restaurants where you can find them.
+    Once it's finished the response will contain a "success" status a list of dishes and the restaurants where you can find them.
 
