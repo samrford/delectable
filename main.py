@@ -20,7 +20,7 @@ async def search(request: SearchRequest) -> str:
         RestaurantSuggestionParams(
             request=request,
         ),
-        id=f"restaurant_finder_workflow_{uuid.uuid4()}",
+        id=str(uuid.uuid4()),
         task_queue="main_task_queue",
     )
 
