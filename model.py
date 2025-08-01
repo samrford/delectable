@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 
 class SearchRequest(BaseModel):
-    ingredients: list[str]
+    dishes: list[str]
     dish_count: int
     location: str
     
